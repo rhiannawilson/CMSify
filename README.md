@@ -4,6 +4,40 @@ Build a CMS-style blog application using the Model-View-Controller (MVC) archite
 # Description 
 This project involves creating a structured system for managing content with clear separation of data, user interface, and application logic. Features include creating, reading, updating, and deleting posts, user authentication, and comment management. The app will use Handlebars.js for templating, Sequelize as the ORM, and express-session for authentication. Deploy the final application to Render.
 
+### Table of Contents:
+- [Description](#description)
+- [Video Demo](#walkthrough-video)
+- [Directory Structure](#directory-structure)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Appearance & Functionality](#appearance--functionality) 
+- [Usage & Technical Details](#usage--instructions)
+- [Contributions](#contributions)
+- [Credits](#credits)
+- [License](#license)
+- [Author](#author)
+
+## Directory Structure
+```  
+├── CMSify
+    ├── assets/
+        ├──Example of View All departments.png
+        ├──assets/Example of View All Roles.png
+        ├──assets/Example View All Employees.png
+    ├── develop/                
+        ├── db/
+            ├── queries.sql
+            ├── schema.sql
+            ├── seeds.sql              
+    ├── node_modules/           
+    ├── .gitignore          
+    ├── index.js    
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md         
+```
+
 ### User Story
 ```
 AS A developer who writes about tech
@@ -47,3 +81,45 @@ THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
 ```
+[Back to Table of Contents](#table-of-contents)
+
+## Appearance & Functionality 
+#### View All Departments Example
+>![View All Departments Example](./assets/Example%20of%20View%20All%20Departments.png)
+
+#### View All Roles Example
+>![View All Roles Example](./assets/Example%20of%20View%20All%20Roles.png)
+
+#### View All Employees Example
+>![View All Employees Example](./assets/Example%20View%20All%20Employees.png)
+
+[Back to Table of Contents](#table-of-contents)
+
+## Usage & Instructions
+    1. 
+
+### Technical Details
+- > Node 
+
+### .gitignore 
+- > .DS_store 
+- > node_modules
+    
+[Back to Table of Contents](#table-of-contents)
+## Contributions
+N/A
+
+[Back to Table of Contents](#table-of-contents)
+
+## Credits
+N/A
+
+[Back to Table of Contents](#table-of-contents)
+
+## License
+![alt text](https://img.shields.io/badge/License-_MIT-blue.svg)
+
+## Author
+@ Rhianna Wilson
+[rhiannawilson](https://github.com/rhiannawilson)
+[Back to Table of Contents](#table-of-contents)
