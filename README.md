@@ -35,7 +35,15 @@ This project involves creating a structured system for managing content with cle
     ├── LICENSE
     ├── package-lock.json
     ├── package.json
-    └── README.md         
+    └── README.md   
+
+    .
+├── app.js
+└── views
+    ├── home.handlebars
+    └── layouts
+        └── main.handlebars
+
 ```
 
 ### User Story
@@ -100,6 +108,13 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 
 ### Technical Details
 - > Node 
+- > express handlebars
+- > pg
+- > Sequelize
+- > dotenv 
+- > bcrypt
+- > express-session
+- > connect-session-sequelize
 
 ### .gitignore 
 - > .DS_store 
