@@ -53,7 +53,7 @@ This project involved creating a structured system for managing content with cle
         ├── auth.js      
         ├── helpers.js        
     ├── views/
-        ├── views/
+        ├── layouts/
             ├── main.handlebars
         ├── homepage.handlebars
         ├── login.handlebars
