@@ -1,0 +1,23 @@
+{{!-- HTML TEMPLATE --}}
+<!-- Loop over each object in the projects array -->
+{{#each projects as |project| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/views/project.handlebars/">{{project.name}}</a>
+    </h2>
+    <p>
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="">{{project.posted_by}}</span>
+    </p>
+    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{project.content}}
+    </p>
+  </div>
+</div>
+{{/each}}

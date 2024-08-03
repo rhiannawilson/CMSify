@@ -14,12 +14,16 @@ const seedDatabase = async () => {
 
   for (const project of projectData) {
     await Project.create({
-      ...project,
+      title: project.title,
+      content: project.content, // matches the JSON structure
+      posted_by: project.posted_by,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
+  
 
   process.exit(0);
 };
 
 seedDatabase();
+// seeds the information / content of the database to your UI
