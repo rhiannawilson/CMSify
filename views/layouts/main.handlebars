@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog CMSify</title>
-  <link rel="stylesheet" href="./public/css/jass.css">
-  <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="./css/jass.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -18,10 +18,10 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/views/profile.handlebars">profile</a> |
+        <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/views/login.handlebars">login</a>
+        <a href="/login">login</a>
         {{/if}}
       </nav>
     </header>
@@ -30,18 +30,12 @@
       {{{ body }}}
     </main>
     <footer>
-  <p>&copy; 2024 CMSify. All rights reserved.</p>
-  <ul>
-    <li><a href="/views/privacy.handlebars">Privacy Policy</a></li>
-    <li><a href="/views/terms.handlebars">Terms of Service</a></li>
-    <li><a href="/views/contact.handlebars">Contact Us</a></li>
-  </ul>
     </footer>
   </div>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
-  <script src="/public/js/logout.js"></script>
+  <script src="/js/logout.js"></script>
   {{/if}}
 </body>
 

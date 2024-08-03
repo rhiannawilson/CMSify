@@ -42,6 +42,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 // Define routes
 
+//LOGIN ROUTE
+app.get('views/login', (req, res) => {
+  res.render('views/login'); // this will render views/login.handlebars
+});
+
+//LOGOUT ROUTE
+app.get('/logout', (req, res) => {
+  res.render('logout'); // this will render views/logout.handlebars
+});
+
+//PROFILE ROUTE
+app.get('/profile', (req, res) => {
+  res.render('profile'); // this will render views/profile.handlebars
+});
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
