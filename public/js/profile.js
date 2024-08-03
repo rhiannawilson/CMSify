@@ -2,9 +2,9 @@ const newFormHandler = async (event) => {
     event.preventDefault();
   
     const title = document.querySelector('#project-name').value.trim();
-    const posted_by = document.querySelector('#project-funding').value.trim();
-    const content = document.querySelector('#project-desc').value.trim();
-  
+    const posted_by = document.querySelector('#posted-by').value.trim();
+    const content = document.querySelector('#project-content').value.trim();
+
     if (title && posted_by && content) {
       const response = await fetch(`/api/projects`, {
         method: 'POST',

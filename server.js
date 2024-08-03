@@ -43,8 +43,8 @@ app.use(routes);
 // Define routes
 
 //LOGIN ROUTE
-app.get('views/login', (req, res) => {
-  res.render('views/login'); // this will render views/login.handlebars
+app.get('/login', (req, res) => {
+  res.render('login'); // this will render views/login.handlebars
 });
 
 //LOGOUT ROUTE

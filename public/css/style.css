@@ -9,6 +9,32 @@ header, .project:not(:last-child) {
     font-variant: small-caps;
   }
   
+  h2 {
+    color: #065b83;
+  }
+  
+  main {
+    padding: 30px;
+  }
+
+  #main {
+    margin-top: 4px;
+  }
+
+  .container {
+    margin-bottom: 3px;
+    background-color: seashell;
+  }
+
+.postby {
+    font-style: italic;
+    font-size: small;
+  }
+
+  #blogContent {
+    margin-top: 10px;
+  }
+
   .no-button {
     background: none;
     border: none;
@@ -24,13 +50,4 @@ header, .project:not(:last-child) {
     text-decoration: underline;
   }
 
-.footer {
-display: block;
-  }
-/*   
-  .dollar-amount {
-    color: #056605;
-    font-weight: bold;
-    margin-left: -5px;
-  } */
   

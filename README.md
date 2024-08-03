@@ -2,7 +2,7 @@
 Build a CMS-style blog application using the Model-View-Controller (MVC) architecture.
 
 # Description 
-This project involves creating a structured system for managing content with clear separation of data, user interface, and application logic. Features include creating, reading, updating, and deleting posts, user authentication, and comment management. The app will use Handlebars.js for templating, Sequelize as the ORM, and express-session for authentication. Deploy the final application to Render.
+This project involved creating a structured system for managing content with clear separation of data, user interface, and application logic. Features include creating, reading, updating, and deleting posts, user authentication, and comment management. The app will use Handlebars.js for templating, Sequelize as the ORM, and express-session for authentication. Deploy the final application to Render.
 
 ### Table of Contents:
 - [Description](#description)
@@ -11,7 +11,6 @@ This project involves creating a structured system for managing content with cle
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Appearance & Functionality](#appearance--functionality) 
-- [Usage & Technical Details](#usage--instructions)
 - [Contributions](#contributions)
 - [Credits](#credits)
 - [License](#license)
@@ -21,29 +20,52 @@ This project involves creating a structured system for managing content with cle
 ```  
 ├── CMSify
     ├── assets/
-        ├──Example of View All departments.png
-        ├──assets/Example of View All Roles.png
-        ├──assets/Example View All Employees.png
-    ├── develop/                
-        ├── db/
-            ├── queries.sql
-            ├── schema.sql
-            ├── seeds.sql              
-    ├── node_modules/           
-    ├── .gitignore          
-    ├── index.js    
+        ├──ViewOfProject.png
+    ├── config/ 
+        ├── connection.js 
+    ├── controllers/
+            ├── api/
+                ├── index.js 
+                ├── projectRoutes.js  
+                ├── userRoutes.js    
+        ├── homeRoutes.js 
+        ├── index.js 
+    ├── db/ 
+        ├── schema.sql 
+    ├── models/ 
+        ├── index.js 
+        ├── project.js 
+        ├── user.js 
+    ├── node_modules/ 
+    ├── public/ 
+        ├── css/ 
+            ├── jass.css 
+            ├── styles.css    
+        ├── js/ 
+            ├── login.js 
+            ├── logout.js  
+            ├── profile.js           
+    ├── seeds/ 
+        ├── projectData.json 
+        ├── seed.js 
+        ├── userData.json                 
+    ├── utils/
+        ├── auth.js      
+        ├── helpers.js        
+    ├── views/
+        ├── views/
+            ├── main.handlebars
+        ├── homepage.handlebars
+        ├── login.handlebars
+        ├── profile.handlebars
+        ├── project.handlebars  
+    ├── .env          
+    ├── .gitignore    
     ├── LICENSE
     ├── package-lock.json
     ├── package.json
-    └── README.md   
-
-    .
-├── app.js
-└── views
-    ├── home.handlebars
-    └── layouts
-        └── main.handlebars
-
+    ├── README.md 
+    └── server.js  
 ```
 
 ### User Story
@@ -92,29 +114,23 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 [Back to Table of Contents](#table-of-contents)
 
 ## Appearance & Functionality 
-#### View All Departments Example
->![View All Departments Example](./assets/Example%20of%20View%20All%20Departments.png)
+#### View of Project
+>![View of projectExample](./assets/ViewOfProject.png)
 
-#### View All Roles Example
->![View All Roles Example](./assets/Example%20of%20View%20All%20Roles.png)
-
-#### View All Employees Example
->![View All Employees Example](./assets/Example%20View%20All%20Employees.png)
 
 [Back to Table of Contents](#table-of-contents)
 
-## Usage & Instructions
-    1. 
-
 ### Technical Details
 - > Node 
+- > Nodemon
+- > express
 - > express handlebars
+- > express-session
 - > pg
 - > Sequelize
+- > connect-session-sequelize
 - > dotenv 
 - > bcrypt
-- > express-session
-- > connect-session-sequelize
 
 ### .gitignore 
 - > .DS_store 
@@ -123,8 +139,6 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 [Back to Table of Contents](#table-of-contents)
 ## Contributions
 N/A
-
-[Back to Table of Contents](#table-of-contents)
 
 ## Credits
 N/A
