@@ -11,6 +11,98 @@
   </p>
 </div> --}}
 
+
+
+
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{{get_emoji}}}</p>
+  <p>{{content}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <p><span>{{ posted_by }}</span></p>
+  <p>
+    <button class="btn btn-primary" id="create-another">Create Another Blog Entry</button>
+  </p>
+</div>
+
+<!-- Optional: Include a form for creating a new blog entry -->
+<div class="row mt-4" id="new-project-form-container" style="display: none;">
+  <div class="col-md-6">
+    <h3>Create a New Blog Post:</h3>
+    <form class="form new-project-form">
+      <div class="form-group">
+        <label for="project-name">Title:</label>
+        <input class="form-input" type="text" id="project-name" name="project-name" />
+      </div>
+      <div class="form-group">
+        <label for="posted-by">Posted By:</label>
+        <input class="form-input" type="text" id="posted-by" name="posted-by" />
+      </div>
+      <div class="form-group">
+        <label for="project-content">Content:</label>
+        <textarea class="form-input" id="project-content" name="project-content"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/js/project.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- 
 <div class="text-center">
   <h2>{{title}}</h2>
   <p>{{{get_emoji}}}</p>
@@ -48,4 +140,4 @@
   </div>
 </div>
 
-<script src="/js/project.js"></script>
+<script src="/js/project.js"></script> --}}

@@ -6,7 +6,6 @@ This project involved creating a structured system for managing content with cle
 
 ### Table of Contents:
 - [Description](#description)
-- [Video Demo](#walkthrough-video)
 - [Directory Structure](#directory-structure)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
@@ -117,6 +116,14 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 #### View of Project
 >![View of projectExample](./assets/ViewOfProject.png)
 
+#### Login & Signup Page
+>![View of loginSignup Page](./assets/LoginSignupPage.png)
+
+#### Profile Page
+>![View of Profile Page](./assets/ProfilePage.png)
+
+#### Blog Post Page 
+>![View of Blog Post Page](./assets/BlogPostPage.png)
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -150,5 +157,6 @@ N/A
 
 ## Author
 @ Rhianna Wilson
-[rhiannawilson](https://github.com/rhiannawilson)
+> [rhiannawilson](https://github.com/rhiannawilson)
+
 [Back to Table of Contents](#table-of-contents)
