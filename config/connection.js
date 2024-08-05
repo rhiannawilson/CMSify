@@ -15,8 +15,8 @@ if (process.env.DB_URL) {
     process.env.DB_PASSWORD,
     {
       host: 'localhost', // this tells you where to look for your databas 'local'host
-      dialect: 'postgres'
-    }
+      dialect: 'postgres',
+    },
   );
 }
 
