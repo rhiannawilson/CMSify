@@ -7,7 +7,7 @@ const loginFormHandler = async (event) => {
   
     if (email && password) {
       // Send a POST request to the API endpoint
-      const response = await fetch('/login', {
+      const response = await fetch('/api/users/login', {
         method: 'POST',
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
@@ -32,7 +32,7 @@ const loginFormHandler = async (event) => {
     const password = document.querySelector('#password-signup').value.trim();
   
     if (name && email && password) {
-      const response = await fetch('/signup', {
+      const response = await fetch('/api/users/signup', {
         method: 'POST',
         body: JSON.stringify({ name, email, password }),
         headers: { 'Content-Type': 'application/json' },
@@ -55,7 +55,5 @@ const loginFormHandler = async (event) => {
     .querySelector('.signup-form')
     .addEventListener('submit', signupFormHandler);
   
-
-
 
     
