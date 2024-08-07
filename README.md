@@ -8,6 +8,7 @@ This project involved creating a structured system for managing content with cle
 https://github.com/rhiannawilson/CMSify
 
 ## Github Deployed page:
+https://cmsify.onrender.com
 
 ### Table of Contents:
 - [Description](#description)
