@@ -7,6 +7,8 @@ header, .project:not(:last-child) {
     font-weight: 800;
     font-family: 'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
     font-variant: small-caps;
+    background-color: #FEFCFC;
+    color: #2f91c0;
   }
   
   h2 {
@@ -23,7 +25,7 @@ header, .project:not(:last-child) {
 
   .container {
     margin-bottom: 3px;
-    background-color: sienna;
+    background-color: #a2cae0;
   }
 
 .postby {
