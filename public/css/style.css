@@ -3,7 +3,7 @@ header, .project:not(:last-child) {
   }
 
   * {
-    background-color: rgb(238, 220, 238);
+    background-color: rgb(252, 252, 252);
     font-weight: 800;
     font-family: 'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
     font-variant: small-caps;
